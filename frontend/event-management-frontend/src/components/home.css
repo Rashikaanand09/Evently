@@ -1,0 +1,394 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    /* height: 100%; */
+    /* width: 100vw; Ensure body takes full height */
+    overflow-x: hidden;
+}
+
+/* Home container */
+.home-container {
+    position: relative;
+    text-align: center;
+    /* overflow: hidden; Prevent overflow */
+    height: 100vh;
+    background-size: cover; /* Cover the entire area while maintaining aspect ratio */
+    background-position: center;
+    
+}
+
+.background-image1 {
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: 1; /* Ensure it is behind other elements */
+    /* filter: blur(8px); */
+    background-size: cover;
+    
+    
+}
+#bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+}
+
+/* Logo styles */
+.home-logo {
+    position: absolute; /* Positioning on top of the navbar */
+    top: 10px; /* Adjust as needed */
+    left: 20px; /* Align logo to the left */
+    z-index: 30; /* Ensure it is above other elements */
+    mix-blend-mode: multiply; 
+}
+
+#home-logoo {
+    height: 70px; /* Adjust logo size as needed */
+}
+
+
+
+.navbar-home {
+    display: flex;
+    justify-content: center; /* Align links to the right */
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 255); White with some transparency */
+    position: absolute; /* Positioning on top of the background */
+    top: 0; /* Adjust this value based on logo height */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it is below the logo but above other elements */
+    height: 80px;
+    /* margin: 10px; */
+    
+}
+
+
+.home-nav-links ul {
+    list-style-type: none;
+    display: flex; /* Align links in a single line */
+    margin: 20px;
+    padding: 0;
+    
+}
+
+.home-nav-links li {
+    margin-left: 20px; /* Space between links */
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    
+}
+
+.home-nav-links a,
+.home-dropdown-toggle,
+.home-signout-button,
+.home-signin-link,
+.get-started-button {
+    margin-top: -10px;
+    text-decoration: none;
+    color: white;
+    /* background-color: white; Dark color for links */
+}
+
+/* Dropdown menu styles */
+.home-dropdown-menu {
+    position: absolute; /* Positioning below the dropdown toggle */
+    background-color: transparent; /* Make dropdown background transparent */
+    box-shadow: none; /* Remove shadow for a cleaner look */
+    z-index: 20;
+}
+
+.home-dropdown-item {
+    display: block; /* Make dropdown items block level */
+    padding: 10px;
+    color: black; /* Change text color for visibility */
+    text-decoration: none; 
+}
+
+/* Additional images styles */
+.additional-images {
+    position: absolute; /* Positioning on top of the background */
+    top: 100px; /* Adjust as needed to place below navbar */
+    left: 50%;
+    z-index: 15;
+    transform: translateX(-50%); /* Center horizontally */
+    mix-blend-mode: multiply; 
+}
+
+.additional-images img {
+   display: block; /* Ensure images are block level for spacing */
+   /* Apply blend mode if needed for additional images */
+}
+
+/* Main content area styles */
+.home-about {
+    position: relative; /* Allow stacking context */
+    padding-top: 150px; /* Space below additional images if needed */
+    z-index: 5; /* Ensure it is above the background */
+    color: white; /* Change text color for visibility */
+    text-align: center; /* Center text */
+}
+#main{
+    height: 900px;
+    width: 1400px;
+    margin-top: 10px;
+}
+#dot{
+    height: 300px;
+    width: 500px;
+    margin-left: 330px;
+    margin-top: -90px;
+}
+
+
+.dots-container {
+    position: absolute;
+    top: 80px; /* Adjust this value based on navbar height */ 
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    gap: 10px; /* Space between dots */
+    z-index: 20; /* Same z-index as navbar and main text image */
+ }
+ .dot {
+    margin-top: 830px;
+    width: 15px; /* Size of the dot */
+    height: 15px; /* Size of the dot */
+    border-radius: 50%; /* Make it circular */
+    background-color: rgba(255, 255, 255, 0.7); /* Light color for visibility */
+    cursor: pointer; /* Pointer cursor on hover */
+ }
+ .dot.active {
+   background-color: rgba(255, 255, 255, 1); /* Highlight active dot */
+}
+.home-dropdown-toggle,
+.home-signout-button {
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* Text color */
+    font-size: 18.5px; /* Increase font size to match other links */
+    font-weight: bolder;
+}
+.home-dropdown-toggle:hover,
+.home-signout-button:hover {
+    color: white; /* Keep text color white on hover */
+    text-decoration: underline; /* Optional: underline on hover for better visibility */
+
+}
+.home-dropdown-item {
+    display: block; /* Make dropdown items block level */
+    padding: 10px;
+    color: black; /* Change text color for visibility */
+    text-decoration: none; /* Remove underline from links */
+}
+.home-dropdown-toggle {
+    margin-top: 1px;
+    display: flex;
+    align-items: center; /* Align text and icon vertically */
+}
+
+.home-container {
+    position: relative;
+}
+
+.about-section,
+.recent-events-section,
+.extra-info-section {
+    padding: 40px;
+     /* Change as needed */
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2,
+.recent-events-section h2,
+.extra-info-section h2 {
+    color: #333;
+}
+
+.recent-events-section img {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin: 10px;
+}
+.section{
+    padding: 30px;
+}
+#ab,#our{
+    margin-top: -20px;
+    font-size: 40px;
+    background-color: rgb(192, 160, 160,0.4);
+    width: 100vw;
+    margin-left: -30px;
+}
+.about-section {
+    padding: 40px;
+    /* background-color: #f0f8ff; Light blue background color */
+    margin: 20px 0; /* Space between sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Flexbox for image and text alignment */
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Image styles */
+.about-image {
+    width: 40%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Text styles */
+.about-text {
+    width: 60%; /* Adjust width as needed */
+    font-size: 26px;
+}
+
+.recent-events-section {
+    padding: 40px;
+    background-color: white; /* Background for the section */
+    margin-top: 20px; /* Space above */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Flexbox container for images */
+.recent-events-images {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row
+    ; /* Arrange items in a column */
+    align-items: center; /* Center images horizontally */
+    margin-left: -40px;
+}
+
+/* Image styles */
+.recent-events-images img {
+    width: 80%; /* Adjust width as needed (80% of container) */
+    max-width: 300px; /* Limit maximum width of images */
+    margin-bottom: 20px; /* Space between images */
+    border-radius: 8px; /* Optional rounded corners for images */
+}
+
+
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.content, .social-links, .case-studies, .contact {
+    text-align: center;
+}
+
+.content h2, .social-links h3, .case-studies h3, .contact h3 {
+    margin-bottom: 10px;
+}
+
+.content button {
+    background-color: #935959;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.extra-info-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.extra-info-section li {
+    font-size: 20px; /* Increase font size for list items */
+}
+
+.extra-info-section h2 {
+    font-size: 28px; /* Increase font size for main heading */
+}
+
+.extra-info-section h3 {
+    font-size: 24px; /* Increase font size for subheadings */
+}
+
+.extra-info-section p {
+    font-size: 20px; /* Increase font size for paragraphs */
+}
+
+.extra-info-section button {
+    font-size: 20px; /* Increase font size for button text */
+    padding: 10px 20px; /* Add some padding to the button */
+}
+.extra-info-section {
+    padding: 20px; /* Reduced padding for less space */
+    background-color: #ffffff; /* Background color for the section */
+    margin-top: 20px; /* Space above */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Content styles */
+.content {
+    flex: 1; /* Allow content to grow and fill space */
+    margin-right: 20px; /* Space between content and social links */
+}
+
+.social-links,
+.case-studies,
+.contact {
+    flex: 1; /* Allow each section to grow equally */
+}
+
+/* Remove default list styles and increase text size */
+.extra-info-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.extra-info-section li {
+    font-size: 18px; /* Increase font size for list items */
+}
+
+.extra-info-section h2 {
+    font-size: 28px; /* Increase font size for main heading */
+}
+
+.extra-info-section h3 {
+    font-size: 24px; /* Increase font size for subheadings */
+}
+
+.extra-info-section p {
+    font-size: 20px; /* Increase font size for paragraphs */
+}
+
+.extra-info-section button {
+    font-size: 20px; /* Increase font size for button text */
+    padding: 10px 20px; /* Add some padding to the button */
+}

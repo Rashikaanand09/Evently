@@ -1,0 +1,122 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure body takes full height */
+}
+
+/* Contact container */
+.contact-container {
+    position: relative; /* Allow absolute positioning of child elements */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Background image */
+.background-image {
+    filter: blur(5px); /* Blur effect for background */
+    background: url(/public/randombg.png) no-repeat center center; 
+    background-size: cover; /* Cover the entire area while maintaining aspect ratio */
+    position: absolute; /* Ensure it is positioned correctly */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: 1; /* Ensure it is behind other elements */
+}
+
+/* Navbar styles */
+#user-navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    position: absolute; /* Positioning on top of the background */
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it is above the background */
+    height: 80px; /* Navbar height */
+    padding: 0 20px; /* Padding for navbar */
+}
+
+/* Logo styles */
+#user-logo {
+    margin-top: 30px;
+    height: 100px; /* Adjust logo size as needed */
+}
+
+/* Navigation links */
+#user-nav-links ul {
+    list-style-type: none;
+    display: flex; /* Align links in a single line */
+    margin: 0;
+}
+
+#user-nav-links li {
+    margin-left: 20px; /* Space between links */
+}
+
+#user-nav-links a {
+    text-decoration: none;
+    color: #faf8f8; /* Light color for links */
+    font-weight: bold; /* Make links bold */
+}
+
+/* Form styles */
+#user-login-form {
+    
+    position: relative; /* Allow stacking context */
+    z-index: 5; /* Ensure it is above the background */
+    max-width: 600px; /* Max width for the form */
+    margin-top: 250px; /* Space from the top for centering below navbar*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px; /* Increased padding for the form */
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent background for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: 400px;
+}
+
+/* Form header and description styles */
+#user-login-header {
+   text-align: center; 
+   margin-bottom: 10px;
+   font-size: 2em; 
+}
+
+#user-login-description {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 1.2em;
+}
+
+/* Input styles with increased size and spacing between fields*/
+.user-login-input,
+.user-login-textarea {
+   width: 95%; /* Full width */
+   padding: 15px;
+   margin-bottom: 15px; /* Space below inputs for better separation */
+   font-size: 1.2em; /* Increased font size for better readability */
+   border: none; 
+   border-bottom: 2px solid black; /* Black bottom border only */
+   background-color: rgba(255, 255, 255, 0.0001); /* Transparent background to blend with the background image */
+}
+
+/* Button styles remain unchanged */
+.user-login-button {
+    width: 100%; /* Full width */
+    padding: 15px;
+    background-color: rgb(96, 37, 37); /* Consistent button color */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color .3s; /* Smooth transition effect */
+ }
+ 
+ .user-login-button:hover {
+    background-color: #69504a; /* Hover state color change */
+ }
+#signup-prompt{
+    font-size: 20px;
+}
+

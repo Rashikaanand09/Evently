@@ -1,0 +1,72 @@
+.navbar-landing {
+    display: flex;
+    /* ;justify-content: flex-end Align links to the right */
+    align-items: center;
+    /* background-color:white; White with some transparency */
+    position: absolute; /* Positioning on top of the background */
+    top: 0; /* Adjust this value based on logo height */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it is below the logo but above other elements */
+    height: 80px;
+}
+.background-image2{
+    background: url(/public/randombg.png) no-repeat center center; /* Center the image */
+    background-size: cover; /* Cover the entire area while maintaining aspect ratio */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: 1; /* Ensure it is behind other elements */
+    filter: blur(8px);
+}
+#land-logo {
+    top: 10px; /* Adjust as needed */
+    margin-left: 15px; /* Align logo to the left */
+    z-index: 30; /* Ensure it is above other elements */
+    mix-blend-mode: multiply; 
+    height: 60px;
+    
+}
+
+.image-options {
+    position: relative; /* Position relative to the landing container */
+    z-index: 20; /* Ensure it is above the background */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center images */
+    gap: 60px; /* Space between images */
+    margin-top: -130px; /* Space from the top */
+    
+}
+.signup-image{
+    border-radius: 60px;
+}
+#para{
+    position: absolute; 
+    top: 140px; /* Adjust this value to position it above the image options */
+    z-index: 20; /* Ensure it is above the background */
+    font-size: 50px; /* Font size */
+    color: rgb(251, 250, 250); /* Change to your desired color */
+    margin-left:780px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+.signup-option p {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 18px; /* Font size for the labels */
+    color: rgb(251, 248, 248); /* Change to your desired color */
+    text-align: center; /* Center the text */
+    margin-left: 30px;
+}
+.signup-optionn{
+    margin-top: -280px;
+}
+#op{
+    color: white;
+    margin-left: 140px;
+}
+#land-logo{
+    height: 40px;
+    width: 70px;
+}

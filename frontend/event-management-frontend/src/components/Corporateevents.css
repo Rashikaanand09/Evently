@@ -1,0 +1,81 @@
+/* Container styles */
+.corporate-events-container {
+    position: relative; 
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; 
+}
+
+/* Form header */
+#admin-signup-header {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below header */
+}
+#admin-navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 255); Slightly transparent background */
+    position: absolute; /* Positioning on top of the background */
+    top: 0; /* Adjust this value based on logo height */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it is above the background */
+    height: 80px; /* Navbar height */
+    padding: 0 20px; /* Padding for navbar */
+}
+
+/* Input styles */
+.admin-signup-input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: none; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    border-bottom: 2px solid black; 
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+/* Textarea styles */
+textarea.admin-signup-input {
+    height: 100px; /* Set a height for the textarea */
+}
+
+/* Button styles */
+#admin-signup-button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for button */
+    background-color: rgb(96, 37, 37); /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+#admin-signup-button:hover {
+background-color: rgb(96, 37, 37); /* Darker shade on hover */
+}
+
+/* Conflict message styles */
+.conflict-message {
+    color: red; /* Red color for conflict messages */
+    text-align: center; /* Center the message */
+    margin-top: 10px; /* Space above the message */
+}
+#adminn-logo{
+    margin-top: 50px;
+    height: 140px;
+}
+#admin-nav-links ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+ }
+ 
+ #admin-nav-links li {
+    margin-left: 20px; /* Space between nav items */
+    font-size: 20px;
+    
+ }
+ 

@@ -1,0 +1,85 @@
+.event-approval-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    /* background-color: white; */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.event-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.event-item h3 {
+    margin-top: 0;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+.approve-button,
+.decline-button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.approve-button {
+    background-color: #6b392c; /* Green for approve */
+    color: white;
+}
+
+.decline-button {
+    background-color: #516e81; /* Red for decline */
+    color: white;
+}
+
+.approve-button:hover {
+    background-color:  #6b392c; /* Darker green on hover */
+}
+
+.decline-button:hover {
+    background-color: #516e81;  /* Darker red on hover */
+}
+
+.background-image33 {
+    background-image: url("/public/m1.jpg");
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    /* Ensure it is behind other elements */
+    filter: blur(8px);
+    background-size: cover;
+    z-index: -10;
+    
+}
+.event-card{
+    margin : 30px;
+    margin-top: 70px;
+    background-color: #f7f7f7;
+}
+#approval-title{
+    color: #f7f7f7;
+    font-size: 45px;
+}

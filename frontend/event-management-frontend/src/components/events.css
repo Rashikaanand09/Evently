@@ -1,0 +1,83 @@
+.events-container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    /* align-items: center; Center items horizontally */
+    padding: 20px; /* Add some padding around the container */
+    position: relative; /* Establish a new positioning context */
+}
+
+.event-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0; /* Margin only on top and bottom for vertical spacing */
+    width: 80%; /* Set width to a percentage for responsiveness */
+    max-width: 200px; /* Optional: set a maximum width */
+    text-align: center;
+}
+
+.event-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Additional styles for titles and buttons if needed */
+.events-title {
+    font-size: 2em; /* Increase title size */
+    margin-bottom: 20px; /* Space below title */
+    color: white;
+    font-size: 35px;
+   
+}
+
+.more-details-button {
+    background-color: rgb(96, 37, 37); /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-details-button:hover {
+    background-color: rgb(76, 27, 27); /* Darker shade on hover */
+}
+
+.background-animation {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden; /* Prevent overflow of balls */
+   z-index: -1; /* Ensure it is behind other elements */
+}
+
+.ball {
+   position: absolute;
+   bottom: -50px; /* Start below the viewport */
+   width: 20px; /* Ball size */
+   height: 20px; /* Ball size */
+   border-radius: 50%; /* Make it circular */
+   background-color: rgba(0, 0, 0, 0.7); /* White color with transparency */
+   animation-name: fall; /* Use fall animation defined below */
+   animation-timing-function: linear; /* Smooth falling effect */
+}
+
+/* Keyframes for ball movement */
+@keyframes fall {
+   to {
+       transform: translateY(calc(100vh + 50px)); /* Move down to below viewport */
+   }
+}
+
+/* Create multiple balls with different animations using nth-child selector */
+.ball:nth-child(1) { left: calc(10%); animation-duration: 4s; animation-delay: -2s; }
+.ball:nth-child(2) { left: calc(30%); animation-duration: 5s; animation-delay: -3s; }
+.ball:nth-child(3) { left: calc(50%); animation-duration: 6s; animation-delay: -4s; }
+.ball:nth-child(4) { left: calc(70%); animation-duration: 5s; animation-delay: -1s; }
+.ball:nth-child(5) { left: calc(90%); animation-duration: 4s; animation-delay:-5s; }
+/* Add more as needed */
+
+/* Repeat balls to create an infinite effect by adjusting their positions and durations */
+

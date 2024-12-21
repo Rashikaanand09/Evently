@@ -1,0 +1,50 @@
+
+/* Form styles */
+#user-signup-form {
+    position: relative; /* Allow stacking context */
+    z-index: 5; /* Ensure it is above the background */
+    max-width: 600px; /* Max width for the form */
+    margin: 180px auto; /* Center the form with margin */
+    padding: 20px; /* Padding for the form */
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form header */
+#user-signup-header {
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Space below header */
+}
+
+/* Form description */
+#admin-contact-description {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below description */
+}
+
+/* Input styles */
+.user-signup-input {
+    width: 100%; /* Full width */
+    padding: 15px; /* Increased padding for inputs to enhance size */
+    margin-bottom: 15px; /* Space below inputs for better separation */
+    font-size: 1.2em; /* Increased font size for better readability */
+    border: none; /* Remove default border */
+    border-bottom: 2px solid black; /* Black bottom border only */
+    background-color: rgba(255, 255, 255, 0.01); /* Transparent background to blend with the background image */  
+ }
+
+/* Button styles */
+.user-signup-button {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding for button */
+    background-color: rgb(96, 37, 37); /* Button color */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    cursor:pointer;
+    transition:bg-color .3s;
+ }
+ 
+ .user-signup-button:hover {
+    background-color:#69504a; /* Darker shade on hover */
+ }

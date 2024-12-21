@@ -1,0 +1,89 @@
+.landing-page-container {
+    position: relative; /* Allow absolute positioning of child elements */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Background image */
+.background-image {
+    background: url(/public/randombg.png) no-repeat center center; /* Center the image */
+    background-size: cover; /* Cover the entire area while maintaining aspect ratio */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: 1; /* Ensure it is behind other elements */
+    /* filter: blur(8px); Optional: blur effect */
+}
+
+/* Navbar styles */
+.navbar-landing {
+    display: flex;
+    align-items: center;
+    /* background-color: white; White with some transparency */
+    position: absolute; /* Positioning on top of the background */
+    top: 0; /* Adjust this value based on logo height */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it is above other elements */
+    height: 80px;
+}
+
+/* Logo styles */
+#land-logo {
+    top: 10px; /* Adjust as needed */
+    margin-left: 15px; /* Align logo to the left */
+    z-index: 30; /* Ensure it is above other elements */
+    height: 60px;
+}
+
+/* Welcome message styles */
+#welcome-message {
+    position: absolute; 
+    top: 140px; /* Adjust this value to position it above the login options */
+    z-index: 20; /* Ensure it is above the background */
+    font-size: 50px; /* Font size */
+    color: rgb(7, 7, 7); /* Change to your desired color */
+    text-align: center; /* Center the text */
+}
+
+/* Choose login text styles */
+#choose-login {
+    position: absolute; 
+    top: 150px; /* Adjust this value to position it above the login options */
+    z-index: 20; /* Ensure it is above the background */
+    font-size: 50px; /* Font size */
+    color: rgb(253, 252, 252); /* Change to your desired color */
+    text-align: center; /* Center the text */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+/* Login options styles */
+.login-options {
+    position: relative; /* Position relative to the landing container */
+    z-index: 20; /* Ensure it is above the background */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center buttons */
+    gap: 40px; /* Space between buttons */
+    margin-top: 20px; /* Space from the top */
+    font-size: 90px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+/* Login button styles */
+.login-button {
+    padding: 10px 20px; /* Padding for buttons */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; 
+}
+#option{
+    color: aliceblue;
+}

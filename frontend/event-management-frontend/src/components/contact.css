@@ -1,0 +1,108 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+/* Contact container */
+.contact-container {
+   position: relative;
+   height: 100vh;
+   display: flex;
+}
+
+/* Background image */
+.background-image {
+   filter: blur(5px);
+   background: url(/public/contact1.jpg) no-repeat center center;
+   background-size: cover;
+   position: absolute;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 1; /* Ensure it is behind other elements */
+}
+
+/* Main content area */
+.contact-content {
+   display: flex;
+   justify-content: center; /* Center content horizontally */
+   align-items: center; /* Center content vertically */
+   width: 100%;
+   z-index: 2; /* Ensure content is above background */
+}
+
+#admin-logo{
+   height: 50px;
+}
+/* Form styles */
+#admin-contact-form {
+   max-width: 580px; /* Max width for the form */
+  
+   margin: auto; /* Center the form */
+   padding: 20px; /* Padding for the form */
+   background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent background */
+   border-radius: 8px; /* Rounded corners */
+}
+
+/* Input styles with increased height */
+.admin-contact-input,
+.admin-contact-textarea {
+   width: 95%; /* Full width */
+   padding: 15px; /* Increased padding for height */
+   margin-bottom: 15px; /* Space below inputs */
+   border: none; /* Remove default border */
+   border-bottom: 2px solid black; /* Black bottom border only */
+   font-size: 1.2em; /* Increased font size for better readability */
+   background-color: rgba(255, 255, 255, 0.01);
+}
+
+/* Button styles remain unchanged */
+.admin-contact-button {
+   width: 100%; /* Full width */
+   background-color: rgb(96, 37, 37);
+}
+
+/* Header and description styles for the form */
+#admin-contact-header {
+   text-align: center;
+}
+
+#admin-contact-description {
+   text-align: center;
+}
+
+
+#adminn-navbar {
+   display: flex;
+   justify-content: flex-end; /* Space between logo and links */
+   align-items: center;
+   position: absolute; /* Fixed at the top */
+   top: 20px; /* Adjust as needed */
+   left: -30px;
+   right: 0;
+   z-index: 10; /* Ensure it stays above other elements */
+   padding: 0 20px; /* Padding for spacing */
+}
+
+#admin-logo {
+   height: 50px; /* Logo height */
+}
+
+#admin-nav-links ul {
+   list-style-type: none;
+   display: flex;
+   margin: 0;
+}
+
+#admin-nav-links li {
+   margin-left: 20px; /* Space between nav items */
+   font-size: 20px;
+   
+}
+
+#admin-nav-links a {
+   text-decoration: none;
+   color: #fffefe; /* Link color */
+   font-weight: bold; /* Bold text */
+}

@@ -1,0 +1,79 @@
+
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Maximum width of the form */
+    background-color: white; /* Background color of the form */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+h2 {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Title color */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width input fields */
+    padding: 12px; /* Increased padding */
+    margin: 10px 0; /* Space above and below input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners for input fields */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ccb4e7; /* Change border color on focus */
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Padding inside button */
+    background-color: #bca1da; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and scale on hover */
+}
+
+button:hover {
+    background-color: #2575fc; /* Change button color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center; /* Align checkbox and label vertically centered */
+}
+
+.remember-me input {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+.forgot-password,
+.register-link {
+    display: block;
+    text-align: center; /* Centered text for links */
+    margin-top: 10px; /* Space above links */
+}
+
+.forgot-password a,
+.register-link a {
+    color: #6a11cb; /* Link color */
+}
+
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+}
